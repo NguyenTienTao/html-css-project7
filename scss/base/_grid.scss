@@ -1,5 +1,6 @@
 /* ======= Responsive ====== */
 @use "sass:math";
+@use "sass:map";
 
 $grid-breakpoints: (
     xs: 0,
@@ -7,7 +8,7 @@ $grid-breakpoints: (
     md: 768px,
     lg: 992px,
     xl: 1200px,
-    xxl: 1400px,
+    // xxl: 1400px,
 );
 
 $container-max-widths: (
@@ -15,7 +16,7 @@ $container-max-widths: (
     md: 720px,
     lg: 960px,
     xl: 1170px,
-    xxl: 1320px,
+    // xxl: 1320px,
 );
 $grid-columns: 12;
 $grid-gutter-width: 30px;
@@ -115,10 +116,7 @@ $gutters: (
 }
 
 @each $breakpoint, $dimension in $grid-breakpoints {
-    $max-width: map-get(
-        $map: $container-max-widths,
-        $key: $breakpoint,
-    );
+    $max-width: map.get($container-max-widths, $breakpoint);
     $is-xs: $breakpoint == xs;
     $infix: if($is-xs, "", "-#{$breakpoint}");
 

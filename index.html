@@ -94,7 +94,7 @@
         <!-- Css -->
         <link rel="stylesheet" href="./assets/css/main.css" />
     </head>
-    <body>
+    <body style="height: 5000px">
         <!-- Header -->
         <header class="header">
             <div class="container">
@@ -140,7 +140,8 @@
         </header>
 
         <main>
-            <div class="hero">
+            <!-- Hero -->
+            <section class="hero">
                 <div class="container">
                     <div class="hero__inner row">
                         <div class="hero__media col-12 col-lg-6">
@@ -250,11 +251,27 @@
                         <div
                             class="hero__content col-12 offset-0 col-lg-5 offset-lg-1"
                         >
-                            <h1
-                                class="hero__content--heading section-heading-1"
-                            >
-                                A new era of podcasting for you
-                            </h1>
+                            <div class="hero__heading--wrap">
+                                <h1
+                                    class="hero__content--heading section-heading-1"
+                                >
+                                    A new era of podcasting for you
+                                </h1>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="332"
+                                    height="38"
+                                    viewBox="0 0 332 38"
+                                    fill="none"
+                                    class="hero__heading--decor"
+                                >
+                                    <path
+                                        d="M2 4C51.0021 26.6387 185.205 58.3329 330 4"
+                                        stroke="#936CDD"
+                                        stroke-width="8"
+                                    />
+                                </svg>
+                            </div>
                             <p class="hero__content--desc section-desc-1">
                                 Rebuilt for simplicity and speed, so you can
                                 spend more time discovering and listening to
@@ -285,7 +302,282 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- Platform -->
+            <section class="platform">
+                <div class="container">
+                    <div class="platform-inner row">
+                        <div class="platform-content col-12 col-lg-5">
+                            <div class="platform__heading--wrap">
+                                <h2 class="platform__heading section-heading-2">
+                                    We are in the top padcast directories
+                                </h2>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="241"
+                                    height="38"
+                                    viewBox="0 0 241 38"
+                                    fill="none"
+                                    class="platform__heading--decor"
+                                >
+                                    <path
+                                        d="M3 4C38.2576 26.6387 134.818 58.3329 239 4"
+                                        stroke="#936CDD"
+                                        stroke-width="8"
+                                    />
+                                </svg>
+                            </div>
+                            <p class="platform__desc section-desc-2">
+                                Rebuilt for simplicity and speed, so you can
+                                spend more time discovering and listening to
+                                great podcasts. We are everywhere on the
+                                internet.
+                            </p>
+                            <a href="#!" class="btn platform__btn">
+                                Listen now
+                                <span class="platform__btn-icon">
+                                    <img
+                                        src="./assets/icons/icon-play.svg"
+                                        alt=""
+                                    />
+                                </span>
+                            </a>
+                        </div>
+                        <div class="platform-media col-12 col-lg-6 offset-lg-1">
+                            <div class="platform-media__bg"></div>
+                            <div class="platform-media__wrap">
+                                <img
+                                    src="./assets/img/platform-img-1.png"
+                                    alt=""
+                                    class="platform-media__wrap--img"
+                                />
+                                <img
+                                    src="./assets/img/platform-img-2.png"
+                                    alt=""
+                                    class="platform-media__wrap--img"
+                                />
+                                <img
+                                    src="./assets/img/platform-img-3.png"
+                                    alt=""
+                                    class="platform-media__wrap--img"
+                                />
+                                <img
+                                    src="./assets/img/platform-img-4.png"
+                                    alt=""
+                                    class="platform-media__wrap--img"
+                                />
+                                <img
+                                    src="./assets/img/platform-img-5.png"
+                                    alt=""
+                                    class="platform-media__wrap--img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category -->
+            <section class="category">
+                <div class="container">
+                    <div class="category__heading-wrap">
+                        <h2 class="category__heading section-heading-2">
+                            Listen by category
+                        </h2>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="198"
+                            height="31"
+                            viewBox="0 0 198 31"
+                            fill="none"
+                            class="category__heading--decor"
+                        >
+                            <path
+                                d="M3 4C31.8335 21.3563 110.8 45.6552 196 4"
+                                stroke="#936CDD"
+                                stroke-width="8"
+                            />
+                        </svg>
+                    </div>
+                    <p class="category__desc section-desc-2">
+                        Listen all kind of podcasts you like by exploring
+                        categories. Make your day even better
+                    </p>
+                    <div class="category__list row">
+                        <article class="category-item col-12 col-lg-4">
+                            <figure class="category-item__wrap">
+                                <img
+                                    src="./assets/img/education.png"
+                                    alt="education"
+                                    class="category-item__thumb"
+                                />
+                                <a class="category-item__info">
+                                    <div class="category-item__info--row">
+                                        <p
+                                            class="category-item__title section-desc-1"
+                                        >
+                                            Education
+                                        </p>
+                                        <span class="category-item__icon">
+                                            <img
+                                                src="./assets/icons/arrow-right.svg"
+                                                alt=""
+                                            />
+                                        </span>
+                                    </div>
+                                    <p
+                                        class="category-item__info--quantity section-desc-3"
+                                    >
+                                        120 Podcasts Channel
+                                    </p>
+                                </a>
+                            </figure>
+                        </article>
+                        <div class="category__list-right col-12 col-lg-8">
+                            <div class="category-item__group-top row">
+                                <article class="category-item">
+                                    <figure class="category-item__wrap">
+                                        <img
+                                            src="./assets/img/healthcare.png"
+                                            alt="healthcare"
+                                            class="category-item__thumb"
+                                        />
+                                        <a class="category-item__info">
+                                            <div
+                                                class="category-item__info--row"
+                                            >
+                                                <p
+                                                    class="category-item__title section-desc-1"
+                                                >
+                                                    Healthcare
+                                                </p>
+                                                <span
+                                                    class="category-item__icon"
+                                                >
+                                                    <img
+                                                        src="./assets/icons/arrow-right.svg"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                            <p
+                                                class="category-item__info--quantity section-desc-3"
+                                            >
+                                                120 Podcasts Channel
+                                            </p>
+                                        </a>
+                                    </figure>
+                                </article>
+                                <article class="category-item">
+                                    <figure class="category-item__wrap">
+                                        <img
+                                            src="./assets/img/music.png"
+                                            alt="music"
+                                            class="category-item__thumb"
+                                        />
+                                        <a class="category-item__info">
+                                            <div
+                                                class="category-item__info--row"
+                                            >
+                                                <p
+                                                    class="category-item__title section-desc-1"
+                                                >
+                                                    Music
+                                                </p>
+                                                <span
+                                                    class="category-item__icon"
+                                                >
+                                                    <img
+                                                        src="./assets/icons/arrow-right.svg"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                            <p
+                                                class="category-item__info--quantity section-desc-3"
+                                            >
+                                                120 Podcasts Channel
+                                            </p>
+                                        </a>
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="category-item__group-bot row">
+                                <article class="category-item">
+                                    <figure class="category-item__wrap">
+                                        <img
+                                            src="./assets/img/fashion.png"
+                                            alt="fashion"
+                                            class="category-item__thumb"
+                                        />
+                                        <a class="category-item__info">
+                                            <div
+                                                class="category-item__info--row"
+                                            >
+                                                <p
+                                                    class="category-item__title section-desc-1"
+                                                >
+                                                    Fashion
+                                                </p>
+                                                <span
+                                                    class="category-item__icon"
+                                                >
+                                                    <img
+                                                        src="./assets/icons/arrow-right.svg"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                            <p
+                                                class="category-item__info--quantity section-desc-3"
+                                            >
+                                                120 Podcasts Channel
+                                            </p>
+                                        </a>
+                                    </figure>
+                                </article>
+                                <article class="category-item">
+                                    <figure class="category-item__wrap">
+                                        <img
+                                            src="./assets/img/comedy.png"
+                                            alt="comedy"
+                                            class="category-item__thumb"
+                                        />
+                                        <a class="category-item__info">
+                                            <div
+                                                class="category-item__info--row"
+                                            >
+                                                <p
+                                                    class="category-item__title section-desc-1"
+                                                >
+                                                    Comedy
+                                                </p>
+                                                <span
+                                                    class="category-item__icon"
+                                                >
+                                                    <img
+                                                        src="./assets/icons/arrow-right.svg"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                            <p
+                                                class="category-item__info--quantity section-desc-3"
+                                            >
+                                                120 Podcasts Channel
+                                            </p>
+                                        </a>
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__btn">
+                        <a href="#!" class="btn">All category</a>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>

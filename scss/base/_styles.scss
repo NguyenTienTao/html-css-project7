@@ -135,6 +135,7 @@ a {
     }
 }
 
+/* ===== Hero ===== */
 .hero {
     padding: 110px 0 140px;
     background-color: variables.$primary-color-bg;
@@ -299,6 +300,21 @@ a {
     &__content {
         margin-top: 18px;
 
+        .hero__heading--wrap {
+            position: relative;
+
+            .hero__content--heading {
+                position: relative;
+                z-index: 1;
+            }
+
+            .hero__heading--decor {
+                position: absolute;
+                left: 31px;
+                bottom: 68px;
+            }
+        }
+
         &--desc {
             margin-top: 20px;
         }
@@ -337,3 +353,224 @@ a {
         }
     }
 }
+
+/* ===== Platform ===== */
+.platform {
+    margin-top: 205px;
+
+    &-content {
+        .platform__heading--wrap {
+            position: relative;
+
+            .platform__heading {
+                position: relative;
+                z-index: 1;
+            }
+
+            .platform__heading--decor {
+                position: absolute;
+                bottom: -9px;
+                right: 61px;
+            }
+        }
+
+        .platform__desc {
+            margin-top: 18px;
+        }
+
+        .platform__btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 38px;
+            background: variables.$type-purple-color;
+
+            .platform__btn-icon {
+                @include flex-center();
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background: #fff;
+
+                > * {
+                    translate: 1px;
+                }
+            }
+        }
+    }
+
+    &-media {
+        position: relative;
+
+        &__bg {
+            position: absolute;
+            left: 50%;
+            translate: -50%;
+            width: 287px;
+            height: 287px;
+            border-radius: 50%;
+            opacity: 0.4;
+            background: variables.$type-orange-color;
+            filter: blur(129px);
+        }
+
+        &__wrap {
+            position: absolute;
+            left: 50%;
+            translate: -50%;
+            width: 287px;
+            height: 287px;
+            animation: spin 30s linear infinite;
+
+            &--img {
+                position: absolute;
+                animation: spin 30s linear infinite reverse;
+
+                &:nth-child(1) {
+                    top: -56px;
+                    left: 43px;
+                }
+
+                &:nth-child(2) {
+                    top: 3px;
+                    right: -141px;
+                }
+
+                &:nth-child(3) {
+                    bottom: -16px;
+                    right: -93px;
+                }
+
+                &:nth-child(4) {
+                    bottom: -56px;
+                    left: 27px;
+                }
+
+                &:nth-child(5) {
+                    bottom: 99px;
+                    left: -142px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes spin {
+    0% {
+        rotate: 0;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+/* ===== Category ===== */
+.category {
+    margin-top: 160px;
+
+    &__heading-wrap {
+        position: relative;
+        left: 50%;
+        translate: -50%;
+        display: inline-block;
+
+        .category__heading {
+            position: relative;
+            z-index: 1;
+        }
+
+        .category__heading--decor {
+            position: absolute;
+            bottom: -10px;
+            right: -2px;
+        }
+    }
+
+    &__desc {
+        width: 470px;
+        text-align: center;
+        margin: 18px auto 0;
+    }
+
+    &__list {
+        margin-top: 70px;
+
+        .category-item {
+            &__wrap {
+                position: relative;
+                display: flex;
+                align-items: flex-end;
+                border-radius: 8px;
+
+                .category-item__thumb {
+                    width: 100%;
+                    display: block;
+                }
+
+                .category-item__info {
+                    position: absolute;
+                    width: 100%;
+                    padding: 16px 24px;
+                    background: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(10px);
+                    border-radius: 0 0 8px 8px;
+
+                    &--row {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        .category-item__title {
+                            color: #fff;
+                            font-weight: 600;
+                        }
+
+                        .category-item__icon {
+                            @include flex-center();
+                            translate: 0 1px;
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            border: 1px solid #fff;
+                        }
+                    }
+
+                    &--quantity {
+                        color: #fff;
+                    }
+                }
+            }
+
+            &__group-top {
+                .category-item:first-child {
+                    width: 62.5%;
+                }
+
+                .category-item:last-child {
+                    width: 37.5%;
+                }
+            }
+
+            &__group-bot {
+                margin-top: var(--grid-gutter-x);
+
+                .category-item:first-child {
+                    width: 37.5%;
+                }
+
+                .category-item:last-child {
+                    width: 62.5%;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 55px;
+        text-align: center;
+    }
+}
+
+/* ===== Episode ===== */
