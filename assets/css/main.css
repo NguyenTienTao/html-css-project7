@@ -1520,5 +1520,98 @@ a {
 }
 
 /* ===== Episode ===== */
+.episode {
+  margin-top: 160px;
+  padding: 100px 0;
+  background: #fff8f3;
+}
+.episode-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.episode-top__heading-wrap {
+  position: relative;
+}
+.episode-top__heading-wrap .episode__heading {
+  position: relative;
+  z-index: 1;
+  width: 390px;
+}
+.episode-top__heading-wrap .episode__heading--decor {
+  position: absolute;
+  top: 38px;
+  right: 42px;
+}
+.episode__list {
+  margin-top: 84px;
+}
+.episode__list .episode-item {
+  display: flex;
+  align-items: center;
+  gap: var(--grid-gutter-x);
+}
+.episode__list .episode-item__thumb-wrap {
+  width: 50%;
+}
+.episode__list .episode-item__thumb-wrap .episode-item__thumb {
+  width: 100%;
+}
+.episode__list .episode-item__info {
+  width: 50%;
+}
+.episode__list .episode-item__info .episode-item__duration {
+  color: #ff9051;
+}
+.episode__list .episode-item__info .episode-item__title {
+  margin-top: 6px;
+}
+.episode__list .episode-item__info .episode-item__desc {
+  margin-top: 18px;
+}
+.episode__list .episode-item__info .episode-item__link {
+  margin-top: 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #201830;
+  transition: color 0.25s;
+}
+.episode__list .episode-item__info .episode-item__link .episode-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  translate: 0 1px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.episode__list .episode-item__info .episode-item__link:hover {
+  color: #936cdd;
+}
+.episode__list .episode-item:nth-child(3), .episode__list .episode-item:nth-child(4) {
+  margin-top: var(--grid-gutter-x);
+  flex-direction: row-reverse;
+}
+.episode__dots {
+  margin-top: 55px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.episode__dots .episode__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d8d5de;
+  cursor: pointer;
+}
+.episode__dots .episode__dot.active {
+  width: 12px;
+  height: 12px;
+  background: #936cdd;
+}
 
 /*# sourceMappingURL=main.css.map */
