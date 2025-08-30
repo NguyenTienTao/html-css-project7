@@ -693,6 +693,7 @@ a {
 /* ===== Speech ===== */
 .speech {
     margin-top: 168px;
+    overflow: hidden;
 
     &-inner {
         position: relative;
