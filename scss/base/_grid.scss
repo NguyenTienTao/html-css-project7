@@ -124,9 +124,11 @@ $gutters: (
         .container {
             width: $max-width;
 
-            @if $breakpoint != xs and $breakpoint != sm {
+            @if $breakpoint != xs {
                 padding-left: 0;
                 padding-right: 0;
+            } @else {
+                --grid-gutter-x: 36px;
             }
         }
 

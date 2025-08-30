@@ -860,7 +860,7 @@ a {
     &-inner {
         display: grid;
         grid-template-columns: repeat(5, auto);
-        column-gap: 90px;
+        justify-content: space-between;
 
         .footer__col {
             &:first-child {
